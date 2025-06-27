@@ -1,0 +1,160 @@
+
+/*Contenedores con hover--------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #030303;
+}
+
+.acomodo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+ }
+
+.colab1, .colab2, .colab3, .colab4, .colab5, .colab6 {
+    width: 100%;
+}
+
+article {
+            
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.heading a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.heading a:hover {
+    color: #007bff;
+}
+
+article p {
+    color: #666;
+    line-height: 1.5;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+        /* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nospace.group.overview.btmspace-80 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 15px;
+    }
+
+    article {
+        height: auto;
+        min-height: 150px;
+    }
+ }
+/* Eras Filosoficas*/
+
+
+
+        .philosophy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .era-section {
+            margin-bottom: 35px;
+            padding: 25px;
+            border-left: 4px solid #DC8E47;
+            background-color: #fafafa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .era-section:hover {
+            background-color: #f0f0f0;
+            transform: translateX(5px);
+        }
+
+        .era-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #DC8E47;
+            margin-bottom: 15px;
+        }
+
+        .era-period {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .era-text {
+            color: #444;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .philosophy-container {
+                padding: 25px;
+                margin: 20px 10px;
+            }
+
+            .main-title {
+                font-size: 2rem;
+            }
+
+            .era-section {
+                padding: 20px;
+            }
+
+            .era-title {
+                font-size: 1.2rem;
+            }
+        }

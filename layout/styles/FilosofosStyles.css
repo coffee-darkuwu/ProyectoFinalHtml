@@ -1,0 +1,106 @@
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+        
+.main-body {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+        
+.contenido-variado {
+    max-width: 1200px;
+     margin: 0 auto;
+    padding: 20px;
+}
+        
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+        
+.h1-filo {
+    color: #8b4513;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #8b4513;
+    padding-bottom: 10px;
+}
+        
+.h2-filo {
+    color: #654321;
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 4px solid #8b4513;
+    padding-left: 15px;
+}
+        
+.p-filo {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.7;
+}
+        
+.imgl {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 300px;
+    height: auto;
+}
+        
+.borderedbox {
+    border: 3px solid #8b4513;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+        
+.inspace-5 {
+    margin-bottom: 20px;
+}
+        
+a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+a:hover {
+    text-decoration: underline;
+    color: #654321;
+}
+        
+.contenedor-Filosofos::after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+        
+        /* Responsive design */
+@media (max-width: 768px) {
+        .imgl {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        }
+            
+    h1 {
+        font-size: 2em;
+        }
+            
+    h2 {
+        font-size: 1.5em;
+    }
+            
+    .container {
+         padding: 15px;
+    }
+}
